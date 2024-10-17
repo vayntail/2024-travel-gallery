@@ -1,25 +1,25 @@
 .page {
     display: none;
 }
-#page-1 {
+#page1 {
     display: grid;
 }
 
-#nav-2:target{
-    #page-2 {
+#page2:target{
+    #content2 {
         display: grid;
     }
-    #page-1 {
+    #page1 {
         display: none;
     }
 } 
 
 
-#nav-3:target{
-    #page-3 {
+#page3:target{
+    #content3 {
         display: grid;
     }
-    #page-1 {
+    #page1 {
         display: none;
     }
 } 
