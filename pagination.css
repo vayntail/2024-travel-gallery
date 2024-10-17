@@ -1,0 +1,25 @@
+.page {
+    display: none;
+}
+#page-1 {
+    display: grid;
+}
+
+#nav-2:target{
+    #page-2 {
+        display: grid;
+    }
+    #page-1 {
+        display: none;
+    }
+} 
+
+
+#nav-3:target{
+    #page-3 {
+        display: grid;
+    }
+    #page-1 {
+        display: none;
+    }
+} 
