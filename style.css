@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,16 @@ header {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+header nav {
+    display: none;
+}
+.title {
+    font-size: 80px;
+    font-family: "Ephesis", cursive, serif;
+}
+.title:hover {
+    font-size: 80px;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -23,15 +35,32 @@ header {
 .hidden {
     display: none;
 }
+header {
+    padding-top: 10px;
+}
+nav {
+    margin-bottom: 30px;
+}
+.hamburger-menu{
+    width: 100%;
+    margin-left: auto;
+}
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: right;
+    margin-bottom: 0;
 }
-nav ul li a{
+nav a{
     text-decoration: none;
-    color: black;
-    padding: 10px;
+    color: rgb(121, 121, 121);
+    padding: 15px;
+}
+nav ul li:hover {
+    a {
+        color: rgb(0, 0, 0);
+    }
+    transform: translateY(4px);
 }
 table, th, td {
     border: 1px solid rgb(163, 163, 163);
@@ -64,8 +93,8 @@ table {
 }
 .photo-card {
     position: relative;
-    width: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,6 +135,12 @@ table {
     }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+
 /* medium devices */
 @media only screen and (min-width: 768px) {
     .grid {
@@ -114,8 +149,18 @@ table {
     .filters {
         grid-column: 1 / span 2;
     }
+    header nav {
+        display: block;
+    }
+    .hamburger-menu {
+        display: none;
+    }
     header {
-        width: 70%;
+        width: 100%;
+        margin: auto;
+    }
+    .header-text-wrap {
+        width: 80%;
         margin: auto;
     }
     
@@ -131,6 +176,10 @@ table {
         grid-column: 1 / span 3;
     }
     header {
+        width: 90%;
+        margin: auto;
+    }
+    .header-text-wrap {
         width: 70%;
         margin: auto;
     }
