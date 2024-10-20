@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📷Yoon's travel photos~</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pagination.css">
 </head>
@@ -20,13 +17,10 @@
                 <li><a href="contact.html">💌Contact me</a></li>
             </ul>
         </nav>
-        <a href="javascript:void(0);" class="hamburger-menu" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
         <div class="header-text-wrap">
             <div class="header-text">
                 <h1 class="title">Yoon's travel photos~</h1>
-                <p class="description">This year, I got to travel a lot and experience many new things! Here's a gallery
+                <p class="description">This year, I got to travel a lot and experience many new things! Here's a gallery website
                     of some of my photos!😊📷
                 </p>
             </div>
@@ -47,7 +41,7 @@
                         <td>07.17 ~ 07.23</td>
                     </tr>
                     <tr>
-                        <th>Places <br/>Visited</th>
+                        <th>Places <br/> Visited</th>
                         <td>
                             <ul>
                                 <li>Osaka</li>
@@ -57,6 +51,7 @@
                         <td>
                             <ul>
                                 <li>Seoul</li>
+                                <li>Cheonan</li>
                             </ul>
                         </td>
                         <td>
@@ -69,23 +64,20 @@
             </table>
         </div>
     </header>
-    <!-- put page1 inside of page2 so it loads on default -->
+    <!-- pagination -->
     <div id="page2">
         <div id="page3">
             <div id="page4">
                 <div class="grid" id="page1">
                     <div class="filters">
-                        <div class="dropdown" style="display: flex; justify-content: right;">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="japan/japan.html">Japan</a></li>
-                                <li><a class="dropdown-item" href="korea/korea.html">Korea</a></li>
-                                <li><a class="dropdown-item" href="nyc.html">NYC</a></li>
-                            </ul>
-                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-button">All <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff"><path d="M6 9L12 15L18 9" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                            <div class="dropdown-content">
+                              <a href="japan.html">Japan</a>
+                              <a href="korea.html">Korea</a>
+                              <a href="nyc.html">NYC</a>
+                            </div>
+                          </div> 
                     </div>
 
                     <!-- photo -->
@@ -177,17 +169,14 @@
                 </div>
                 <div class="page grid" id="content4">
                     <div class="filters">
-                        <div class="dropdown" style="display: flex; justify-content: right;">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                All
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="japan/japan.html">Japan</a></li>
-                                <li><a class="dropdown-item" href="korea/korea.html">Korea</a></li>
-                                <li><a class="dropdown-item" href="nyc.html">NYC</a></li>
-                            </ul>
-                        </div>
+                        <div class="dropdown">
+                            <button class="dropdown-button">All</button>
+                            <div class="dropdown-content">
+                              <a href="japan.html">Japan</a>
+                              <a href="korea.html">Korea</a>
+                              <a href="nyc.html">NYC</a>
+                            </div>
+                          </div> 
                     </div>
     
                     <!-- photo -->
@@ -273,17 +262,14 @@
             </div>
             <div class="page grid" id="content3">
                 <div class="filters">
-                    <div class="dropdown" style="display: flex; justify-content: right;">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            All
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="japan/japan.html">Japan</a></li>
-                            <li><a class="dropdown-item" href="korea/korea.html">Korea</a></li>
-                            <li><a class="dropdown-item" href="nyc.html">NYC</a></li>
-                        </ul>
-                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-button">All</button>
+                        <div class="dropdown-content">
+                          <a href="japan.html">Japan</a>
+                          <a href="korea.html">Korea</a>
+                          <a href="nyc.html">NYC</a>
+                        </div>
+                      </div> 
                 </div>
 
                 <!-- photo -->
@@ -376,17 +362,14 @@
         </div>
         <div class="page grid" id="content2">
             <div class="filters">
-                <div class="dropdown" style="display: flex; justify-content: right;">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        All
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="japan/japan.html">Japan</a></li>
-                        <li><a class="dropdown-item" href="korea.html">Korea</a></li>
-                        <li><a class="dropdown-item" href="nyc.html">NYC</a></li>
-                    </ul>
-                </div>
+                <div class="dropdown">
+                    <button class="dropdown-button">All</button>
+                    <div class="dropdown-content">
+                      <a href="japan.html">Japan</a>
+                      <a href="korea.html">Korea</a>
+                      <a href="nyc.html">NYC</a>
+                    </div>
+                  </div> 
             </div>
 
             <!-- photo -->
@@ -483,12 +466,5 @@
             </nav>
         </div>
     </div>
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 </body>
-
 </html>

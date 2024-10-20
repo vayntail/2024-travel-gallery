@@ -23,3 +23,22 @@
         display: none;
     }
 } 
+
+#page4:target {
+    #content4 {
+        display: grid;
+    }
+    #page1 {
+        display: none;
+    }
+}
+
+
+#page5:target {
+    #content5 {
+        display: grid;
+    }
+    #page1 {
+        display: none;
+    }
+}
