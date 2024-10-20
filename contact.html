@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    .contact-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        gap: 50px;
+
+    }
+
+    form {
+        width: fit-content;
+        margin: auto;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+        padding: 10px;
+
+    }
+
+    h1 {
+        padding-bottom: 10px;
+    }
+    input {
+        border: none;
+        background-color: aliceblue;
+        border-radius: 10px;
+        padding: 2px;
+    }
+</style>
+
 <body>
     <header>
         <nav>
@@ -16,44 +47,38 @@
                 <li><a href="#">💌Contact me</a></li>
             </ul>
         </nav>
-        <div class="header-text-wrap">
+    </header>
+    <div class="contact-wrap">
+        
+        <div style="display: flex; justify-content: center; flex-direction: column;">
             <h1>Interested in funding my next travel money? Contact me!</h1>
+            <img src="photos/not-funny-dwayne-johnson.gif" style="width: 300px; margin: auto;" />
             <form action="/action_page.php">
-                <label for="fname">First Name</label>
+                <label for="fname">Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname">Last Name</label>
+                <br />
+                <label for="lname">$</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
-              
+                <br />
+                <label for="country">Reason for funding:</label>
+                <br />
+                <textarea name="reason" cols="40" rows="5"></textarea>
+                <br />
                 <input type="submit" value="Submit">
-              </form>
-            <p>I got to travel a lot this year and experience many new things~ here's a gallery of some of my photos!</p>
-            <img src="photos/not-funny-dwayne-johnson.gif"/>
+            </form>
+        </div>
+        <div>
             <h1>Subscribe for more photos here! ^^</h1>
             <form action="/action_page.php">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-            
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="australia">Australia</option>
-                  <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
-                </select>
-              
+                <label for="email">Email</label>
+                <br />
+                <input type="email" id="email" name="email" placeholder="Enter your email~">
+                <br />
                 <input type="submit" value="Submit">
-              </form>
+            </form>
         </div>
-    </header>
+        </div>
+
 </body>
+
 </html>
