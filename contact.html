@@ -18,16 +18,13 @@
         gap: 50px;
 
     }
-
     form {
         width: fit-content;
         margin: auto;
         border: 1px solid #b1b1b1;
         border-radius: 10px;
         padding: 10px;
-
     }
-
     h1 {
         padding-bottom: 10px;
     }
@@ -37,6 +34,15 @@
         border-radius: 10px;
         padding: 2px;
     }
+    img {
+        width: 300px; 
+        margin: auto; 
+        padding-bottom: 10px; 
+        transition: all 0.1s ease;
+    }
+    img:hover {
+        width: 350px;
+    }
 </style>
 
 <body>
@@ -44,7 +50,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">🖼️Gallery</a></li>
-                <li><a href="#">💌Contact me</a></li>
+                <li><a href="contact.html">💌Contact me</a></li>
             </ul>
         </nav>
     </header>
@@ -52,15 +58,14 @@
         
         <div style="display: flex; justify-content: center; flex-direction: column;">
             <h1>Interested in funding my next travel money? Contact me!</h1>
-            <img src="photos/not-funny-dwayne-johnson.gif" style="width: 300px; margin: auto;" />
-            <form action="/action_page.php">
-                <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <img src="photos/not-funny-dwayne-johnson.gif" alt="gif where the Rock says 'Kidding...Not Really...Maybe...'"/>
+            <form action="#">
+                <input type="text" id="name" name="name" placeholder="Name">
                 <br />
-                <label for="lname">$</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="amount">$</label>
+                <input type="text" id="amount" name="amount" placeholder="Amount">
                 <br />
-                <label for="country">Reason for funding:</label>
+                <label for="reason">Reason for funding:</label>
                 <br />
                 <textarea name="reason" cols="40" rows="5"></textarea>
                 <br />
@@ -69,12 +74,10 @@
         </div>
         <div>
             <h1>Subscribe for more photos here! ^^</h1>
-            <form action="/action_page.php">
-                <label for="email">Email</label>
-                <br />
+            <form action="#">
                 <input type="email" id="email" name="email" placeholder="Enter your email~">
                 <br />
-                <input type="submit" value="Submit">
+                <input type="submit" value="Subscribe">
             </form>
         </div>
         </div>

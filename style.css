@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
 body {
     width: 85%;
     margin: auto;
+    font-family: "Nunito", sans-serif;
 }
 
 header {
@@ -21,10 +23,12 @@ header {
 .title {
     font-size: 80px;
     font-family: "Yellowtail", cursive, serif;
+    transition: all 0.1s ease;
 }
 
 .title:hover {
-    font-size: 80px;
+    font-size: 90px;
+    
 }
 
 @keyframes fadeIn {
@@ -48,6 +52,7 @@ header {
     width: fit-content;
     padding-bottom: 10px;
 }
+
 
 .header-text p {
     margin-left: 20px;
@@ -94,11 +99,12 @@ td {
 }
 
 table {
-    
+
     border-collapse: collapse;
     margin: auto;
-    
+
 }
+
 td ul {
     padding-left: 15px;
 }
@@ -125,7 +131,7 @@ td ul {
     width: fit-content;
     margin: auto;
     margin-bottom: 50px;
-    
+
 }
 
 .photo-card {
@@ -168,20 +174,21 @@ td ul {
     z-index: 10;
 
     .vertical img {
-        width: 320px;
+        width: 310px;
         height: auto;
         z-index: 10;
     }
 
     .horizontal img {
         width: auto;
-        height: 320px;
+        height: 310px;
     }
 
     .info {
         opacity: 1;
     }
 }
+
 .pages-nav {
     position: fixed;
     left: 50%;
@@ -217,7 +224,7 @@ td ul {
 }
 
 .pages-nav .active {
-    background-color:rgb(251, 233, 255);
+    background-color: rgb(251, 233, 255);
 }
 
 .dropdown-button {
@@ -232,6 +239,7 @@ td ul {
     gap: 5px;
     justify-content: center;
 }
+
 .dropdown {
     position: relative;
 }
@@ -243,27 +251,30 @@ td ul {
     display: none;
     position: absolute;
     background-color: #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     width: 130px;
     border-radius: 10px;
     border: 1px solid #b1b1b1;
-  }
+}
 
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
     border-radius: 10px;
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 
@@ -315,3 +326,4 @@ td ul {
         margin: auto;
     }
 }
+
